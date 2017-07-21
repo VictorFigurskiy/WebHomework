@@ -1,0 +1,71 @@
+2017-07-21 14:40:24 INFO  LogHelper:31 - HHH000204: Processing PersistenceUnitInfo [
+	name: persistence
+	...]
+2017-07-21 14:40:24 INFO  Version:45 - HHH000412: Hibernate Core {5.2.10.Final}
+2017-07-21 14:40:24 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2017-07-21 14:40:24 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2017-07-21 14:40:24 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2017-07-21 14:40:24 INFO  pooling:126 - HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/web_db?useUnicode=true&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC]
+2017-07-21 14:40:24 INFO  pooling:135 - HHH10001001: Connection properties: {user=root, password=****}
+2017-07-21 14:40:24 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2017-07-21 14:40:24 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-07-21 14:40:24 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2017-07-21 14:40:25 INFO  access:47 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@24dfa6a4] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2017-07-21 14:40:25 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2017-07-21 14:40:25 DEBUG SQL:92 - select goal0_.id as id1_0_, goal0_.taskText as taskText2_0_ from goals goal0_
+2017-07-21 14:40:25 INFO  TaskDaoImpl:105 - Book list: asdf
+2017-07-21 14:40:25 INFO  TaskDaoImpl:105 - Book list: 123
+2017-07-21 14:40:25 INFO  TaskDaoImpl:105 - Book list: Занятся изучением спринга
+2017-07-21 14:40:29 DEBUG SQL:92 - select goal0_.id as id1_0_, goal0_.taskText as taskText2_0_ from goals goal0_
+2017-07-21 14:40:29 INFO  TaskDaoImpl:105 - Book list: asdf
+2017-07-21 14:40:29 INFO  TaskDaoImpl:105 - Book list: 123
+2017-07-21 14:40:29 INFO  TaskDaoImpl:105 - Book list: Занятся изучением спринга
+2017-07-21 14:40:29 DEBUG SQL:92 - select goal0_.id as id1_0_0_, goal0_.taskText as taskText2_0_0_ from goals goal0_ where goal0_.id=?
+2017-07-21 14:40:29 DEBUG SQL:92 - delete from goals where id=?
+2017-07-21 14:40:29 INFO  TaskDaoImpl:66 - Goal successfully removed. Goal details: asdf
+2017-07-21 14:40:29 DEBUG SQL:92 - select goal0_.id as id1_0_, goal0_.taskText as taskText2_0_ from goals goal0_
+2017-07-21 14:40:29 INFO  TaskDaoImpl:105 - Book list: 123
+2017-07-21 14:40:29 INFO  TaskDaoImpl:105 - Book list: Занятся изучением спринга
+2017-07-21 14:40:29 DEBUG SQL:92 - select goal0_.id as id1_0_, goal0_.taskText as taskText2_0_ from goals goal0_
+2017-07-21 14:40:29 INFO  TaskDaoImpl:105 - Book list: 123
+2017-07-21 14:40:29 INFO  TaskDaoImpl:105 - Book list: Занятся изучением спринга
+2017-07-21 14:40:30 DEBUG SQL:92 - select goal0_.id as id1_0_, goal0_.taskText as taskText2_0_ from goals goal0_
+2017-07-21 14:40:30 INFO  TaskDaoImpl:105 - Book list: 123
+2017-07-21 14:40:30 INFO  TaskDaoImpl:105 - Book list: Занятся изучением спринга
+2017-07-21 14:40:30 DEBUG SQL:92 - select goal0_.id as id1_0_0_, goal0_.taskText as taskText2_0_0_ from goals goal0_ where goal0_.id=?
+2017-07-21 14:40:30 DEBUG SQL:92 - delete from goals where id=?
+2017-07-21 14:40:30 INFO  TaskDaoImpl:66 - Goal successfully removed. Goal details: 123
+2017-07-21 14:40:30 DEBUG SQL:92 - select goal0_.id as id1_0_, goal0_.taskText as taskText2_0_ from goals goal0_
+2017-07-21 14:40:30 INFO  TaskDaoImpl:105 - Book list: Занятся изучением спринга
+2017-07-21 14:40:30 DEBUG SQL:92 - select goal0_.id as id1_0_, goal0_.taskText as taskText2_0_ from goals goal0_
+2017-07-21 14:40:30 INFO  TaskDaoImpl:105 - Book list: Занятся изучением спринга
+2017-07-21 14:40:33 DEBUG SQL:92 - insert into goals (taskText) values (?)
+2017-07-21 14:40:33 INFO  TaskDaoImpl:28 - Goal successfully saved. Goal details: Еще цель!
+2017-07-21 14:40:33 DEBUG SQL:92 - select goal0_.id as id1_0_, goal0_.taskText as taskText2_0_ from goals goal0_
+2017-07-21 14:40:33 INFO  TaskDaoImpl:105 - Book list: Занятся изучением спринга
+2017-07-21 14:40:33 INFO  TaskDaoImpl:105 - Book list: Еще цель!
+2017-07-21 14:40:33 DEBUG SQL:92 - select goal0_.id as id1_0_, goal0_.taskText as taskText2_0_ from goals goal0_
+2017-07-21 14:40:33 INFO  TaskDaoImpl:105 - Book list: Занятся изучением спринга
+2017-07-21 14:40:33 INFO  TaskDaoImpl:105 - Book list: Еще цель!
+2017-07-21 14:40:37 DEBUG SQL:92 - insert into goals (taskText) values (?)
+2017-07-21 14:40:37 INFO  TaskDaoImpl:28 - Goal successfully saved. Goal details: Новая цель!
+2017-07-21 14:40:37 DEBUG SQL:92 - select goal0_.id as id1_0_, goal0_.taskText as taskText2_0_ from goals goal0_
+2017-07-21 14:40:37 INFO  TaskDaoImpl:105 - Book list: Занятся изучением спринга
+2017-07-21 14:40:37 INFO  TaskDaoImpl:105 - Book list: Еще цель!
+2017-07-21 14:40:37 INFO  TaskDaoImpl:105 - Book list: Новая цель!
+2017-07-21 14:40:37 DEBUG SQL:92 - select goal0_.id as id1_0_, goal0_.taskText as taskText2_0_ from goals goal0_
+2017-07-21 14:40:37 INFO  TaskDaoImpl:105 - Book list: Занятся изучением спринга
+2017-07-21 14:40:37 INFO  TaskDaoImpl:105 - Book list: Еще цель!
+2017-07-21 14:40:37 INFO  TaskDaoImpl:105 - Book list: Новая цель!
+2017-07-21 14:40:41 DEBUG SQL:92 - select goal0_.id as id1_0_, goal0_.taskText as taskText2_0_ from goals goal0_
+2017-07-21 14:40:41 INFO  TaskDaoImpl:105 - Book list: Занятся изучением спринга
+2017-07-21 14:40:41 INFO  TaskDaoImpl:105 - Book list: Еще цель!
+2017-07-21 14:40:41 INFO  TaskDaoImpl:105 - Book list: Новая цель!
+2017-07-21 14:40:41 DEBUG SQL:92 - select goal0_.id as id1_0_, goal0_.taskText as taskText2_0_ from goals goal0_
+2017-07-21 14:40:41 INFO  TaskDaoImpl:105 - Book list: Занятся изучением спринга
+2017-07-21 14:40:41 INFO  TaskDaoImpl:105 - Book list: Еще цель!
+2017-07-21 14:40:41 INFO  TaskDaoImpl:105 - Book list: Новая цель!
+2017-07-21 14:40:41 DEBUG SQL:92 - select goal0_.id as id1_0_, goal0_.taskText as taskText2_0_ from goals goal0_
+2017-07-21 14:40:41 INFO  TaskDaoImpl:105 - Book list: Занятся изучением спринга
+2017-07-21 14:40:41 INFO  TaskDaoImpl:105 - Book list: Еще цель!
+2017-07-21 14:40:41 INFO  TaskDaoImpl:105 - Book list: Новая цель!

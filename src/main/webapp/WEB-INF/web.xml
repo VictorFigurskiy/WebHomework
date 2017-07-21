@@ -6,4 +6,13 @@
         </session-timeout>
     </session-config>
 
+    <servlet>
+        <servlet-name>SessionServlet</servlet-name>
+        <servlet-class>com.victor.web.servlets.SessionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SessionServlet</servlet-name>
+        <url-pattern>/SessionServlet</url-pattern>
+    </servlet-mapping>
+    
 </web-app>

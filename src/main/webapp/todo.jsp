@@ -24,23 +24,24 @@
 <div>
     <form action="servlet" method="post">
         <p><label>Укажите номер цели для удаления<br>
-        <input type="number" name="taskForDelete" size="30" maxlength="255" ></label></p>
+            <input type="number" name="taskForDelete" size="30" maxlength="255"></label></p>
         <p><input type="submit" value="Удалить"></p>
     </form>
 </div>
 
 <div align="center">
-    <table border="5" width = "800" align = "center" cellpadding = "10">
-        <tr align="center"><td><h1>TO DO List:</h1>
-            <ol>
-                <c:forEach items="${goals}" var="goal">
-                    <h3>
-                        <li><c:out value="${goal}"/></li>
-                    </h3>
-                    <%--<ol><li>${goal}</li></ol>--%>
-                </c:forEach>
-            </ol>
-        </td></tr>
+    <table border="5" width="800" align="center" cellpadding="10">
+        <tr align="center">
+            <td><h1>TO DO List:</h1>
+                <ol>
+                    <c:forEach items="${goals}" var="goal">
+                        <h3>
+                            <li><c:out value="${goal}"/></li>
+                        </h3>
+                    </c:forEach>
+                </ol>
+            </td>
+        </tr>
     </table>
 </div>
 

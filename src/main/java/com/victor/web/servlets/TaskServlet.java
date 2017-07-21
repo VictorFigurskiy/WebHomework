@@ -16,7 +16,7 @@ import java.util.List;
 /**
  * Created by Sonikb on 18.07.2017.
  */
-@WebServlet(name = "TaskServlet", urlPatterns = "/servlet", loadOnStartup = 1)
+@WebServlet(name = "TaskDBServlet", urlPatterns = "/servlet", loadOnStartup = 1)
 public class TaskServlet extends HttpServlet {
     private Controller controller = new ControllerTaskImpl();
 
@@ -56,7 +56,7 @@ public class TaskServlet extends HttpServlet {
         String taskForDelete = req.getParameter("taskForDelete");
         int needToDelete = 0;
         List<Goal> goals = new ArrayList<>();
-        if (!taskForDelete.isEmpty()){
+        if (!taskForDelete.isEmpty()) {
             needToDelete = (Integer.parseInt(taskForDelete));
             goals = controller.readAll();
         }

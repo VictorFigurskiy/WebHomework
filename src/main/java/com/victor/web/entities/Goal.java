@@ -12,7 +12,8 @@ public class Goal {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String taskText;
-
+    @Transient
+    private boolean flag;
 
     public Goal() {
     }
@@ -31,6 +32,14 @@ public class Goal {
 
     public void setTaskText(String taskText) {
         this.taskText = taskText;
+    }
+
+    public boolean isFlag() {
+        return flag;
+    }
+
+    public void setFlag(boolean flag) {
+        this.flag = flag;
     }
 
     @Override
