@@ -21,8 +21,8 @@ public class SessionServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String goalFromCheckbox = request.getParameter("goalFromRadio");
         HttpSession session = request.getSession();
-        if (session.getAttribute("myList") == null) {
-            session.setAttribute("myList", new ArrayList<Goal>());
+        if (session.getAttribute("goals") == null) {
+            session.setAttribute("goals", new ArrayList<Goal>());
         }
         List<Goal> goalList = (List<Goal>) session.getAttribute("goals");
         if (goalList != null) {
@@ -39,10 +39,10 @@ public class SessionServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.setCharacterEncoding("UTF-8");
         HttpSession session = req.getSession();
-        if (session.getAttribute("myList") == null) {
-            session.setAttribute("myList", new ArrayList<Goal>());
+        if (session.getAttribute("goals") == null) {
+            session.setAttribute("goals", new ArrayList<Goal>());
         }
-        List<Goal> goalList = (List<Goal>) session.getAttribute("myList");
+        List<Goal> goalList = (List<Goal>) session.getAttribute("goals");
         String task = req.getParameter("task");
 
         if (task != null) {
