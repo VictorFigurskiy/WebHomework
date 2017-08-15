@@ -19,7 +19,7 @@ public class SessionServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String goalFromCheckbox = request.getParameter("goalFromRadio");
+        String goalFromRadio = request.getParameter("goalFromRadio");
         HttpSession session = request.getSession();
         if (session.getAttribute("goals") == null) {
             session.setAttribute("goals", new ArrayList<Goal>());
@@ -27,7 +27,7 @@ public class SessionServlet extends HttpServlet {
         List<Goal> goalList = (List<Goal>) session.getAttribute("goals");
         if (goalList != null) {
             for (Goal goal : goalList) {
-                if (goal.getTaskText().equals(goalFromCheckbox)) {
+                if (goal.getTaskText().equals(goalFromRadio)) {
                     goal.setFlag(true);
                 }
             }
